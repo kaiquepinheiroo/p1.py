@@ -10,6 +10,13 @@ Anexo: prova.py
 #1. Faça um programa que leia o saldo de uma conta corrente,
 #   o juros de rendimento mensal e imprima o valor em reais do
 #   rendimento referente a 1 mês de juros. (2,5pt)
+# Programa para calcular o rendimento de uma conta corrente em 1 mês
+def q01 ():
+saldo = float(input("Digite o saldo da conta corrente (em reais): "))
+juros_percentual = float(input("Digite a taxa de juros mensal (%): ")
+juros_decimal = juros_percentual / 100
+rendimento = saldo * juros_decimal
+print(f"O rendimento em 1 mês é de R$ {rendimento:.2f}")
 
 #2. Complemente a questão 1 da prova, para que o cálculo do
 #   rendimento só ocorra se o saldo da conta for positivo.
